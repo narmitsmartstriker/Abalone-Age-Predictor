@@ -1,6 +1,5 @@
-#B20218
 #Narmit Kumar
-#Ph : 8580496363
+
 
 import pandas as pd
 import numpy as np
@@ -25,8 +24,8 @@ test = pd.concat([X_test,Y_test],axis = 1)
 train.to_csv("abalone_train.csv" , index = False)
 test.to_csv("abalone_test.csv" , index = False)
 
-#Q1.
-print("Q1:",'\n')
+#1.
+print("1:",'\n')
 
 #Finding attribute having highest correlation with Target attribute "Rings".
 cr =a.corr()
@@ -66,8 +65,8 @@ plt.title('Simple linear regression model')
 plt.show()
 
 
-#Q2.multivariate (multiple) linear regression model to predict Rings
-print("Q2",'\n')
+#2. Multivariate (multiple) linear regression model to predict Rings
+print("2",'\n')
 
 #A :prediction accuracy on the training data using root mean squared error
 print('a:')
@@ -89,8 +88,8 @@ plt.ylabel('Predicted Rings')
 plt.title('Multivariate linear regression model')
 plt.show()
 
-#Q3.A simple nonlinear regression model using polynomial curve fitting to predict Rings
-print("Q3:")
+#3.A simple nonlinear regression model using polynomial curve fitting to predict Rings
+print("3:")
 P = [2, 3, 4, 5]
 
 #A
@@ -161,8 +160,8 @@ plt.ylabel('Predicted Rings')
 plt.title('Univariate non-linear regression model')
 plt.show()
 
-#Q4.Multivariate nonlinear regression model using polynomial regression to predict Rings
-print("Q4:")
+#4.Multivariate nonlinear regression model using polynomial regression to predict Rings
+print("4:")
 
 #A
 print('a:')
